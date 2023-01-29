@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        
+        body{
+            background-color: gray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 6px; /*shorthand para arredondar as bordas da sua box
+            boder-radius: 6px 7px -> Top-left-radius e bottom-right-radius 6px, top-right-radius e bottom-left radius 7px
+            Pode também ajeitar cada um individualmente fazendo: boder-localization-radius: */
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+        }
+
+
+        nav{
+            background-color: #817e7e;
+            box-shadow: 1px /*deslocamento horizontal*/ 1px /*deslocamento vertical*/ 1px /*blur - espalhamento*/ #000000a2; 
+            /*colocando sombra na sua caixa*/
+        
+        }
+        nav > a{
+            color: white;
+            margin-right: 5px;
+            padding-left: 10px;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+        }
+
+        section#assuntos{
+            background-color: #a39c9c;
+            
+        }
+
+        article{
+            background-color: #a39c9c;
+            padding: 5px;
+        }
+        
+        footer{
+            color: white;
+            background-color: black;
+            padding: 4px;
+            text-align: center;
+        }
+        
+        footer > p{
+            margin: 0px; /*O navegador estava colocando uma margem no paragrado, com isso o padding de 4px não estava funcionando - utulizar o especionar*/
+        }
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Menu- navegação-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"> <!--Seção-->
+            <h2>Esportes, Política e Tecnologia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius quibusdam est consequatur magnam asperiores, doloribus natus hic, neque sapiente voluptates voluptatem, itaque quia iusto. Perferendis itaque laudantium ipsa reprehenderit.</p>
+        </section>
+        <section id="noticias">
+            <article> <!--Artigo, noticia-->
+                <h2>Noticias sobre RJ</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat facilis, nemo aut repellendus voluptatum quo eius maiores sint expedita molestiae fuga delectus et accusantium exercitationem labore excepturi quasi, architecto illum?</p>
+            </article>
+        </section>
+    </main>
+    <footer> <!--rodapé-->
+        <p>Desenvolvidor pelo Antonio LTDA</p>
+    </footer>
+    <!--Todos eles são vistos como div, porém são semanticas-->
+</body>
+</html>
+<!--Isso aqui é só um exemplo. Uma <section> pode está dentro de um <article> assim como uma <article> pode estar dentro de uma <section>, O Nav pode está em outro lugar se não tiver no seu cabeçalho, etc-->

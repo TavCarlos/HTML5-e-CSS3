@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    background-color: lightgray;
+    width: 100px;
+    font-size: 1em;
+}
+
+.sublinado:hover{
+    text-decoration: underline;
+}
+div > p:hover{
+    font-size: 1.1em;
+    width: 110px;
+    text-decoration: underline;
+}
+div > p{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+    color: blueviolet;
+}
+
+a:active{
+    color: blueviolet;
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+/* em HTML é id = em CSS é #
+   em HTML é class = em CSS é .
+
+   Utilizando um identificador você pode adotar estilos em um seletor específico quando há mais de um seletor (ou seja, quando houver mais de um h1.. h2.. etc, e eu gostaria de modificar somente um */
+
+   /* Dentro de um documento HTML só pode haver um elemento com ID
+   Utiliando class você pode ter o mesmo elemento com a mesma classe. Podendo ser Multilho
+   é possível aplicar mais de uma classse a um simples elemento também, basta separar o nome da classe com espaço
+
+   Dentro do HTML existe a Tag <span></span> que não tem uma funcionalidade específica além da demarcação daquele trecho específico, com isso pode-se utilizar estilos em um trecho que está dentro de um parágrafo, por exemplo:
+
+   <p>Eu <span class="basico">gosto de bolo </span></p>
+   Com isso, no HTML, a expressão ''gosto'' terá as mesma configurações da class básico*/
+
+body{
+    background-color: #68E7EB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{ 
+    color: #297e81
+}
+
+h1#principal {
+    color: #6DF3F7;
+    background-color: #2F696B;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h2{
+    color: #3c813c;
+}
+.basico{
+    color: #3c805e;
+}
+.intermediario {
+    color:#79803c;
+}
+.avancado {
+    color: #803c3c;
+}
+.destaque{
+    background-color: #3f7f8181;
+}

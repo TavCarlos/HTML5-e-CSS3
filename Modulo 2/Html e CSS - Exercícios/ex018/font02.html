@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+</head>
+    <style>
+        /*não esquecer de escrever o caminho para a pasta fonte*/
+        @font-face {
+            font-family:'courgette'; /*pode normear do jeito que quiser*/
+            src: url('fontes/Courgette-Regular.ttf') format(truetype);/*, url(outro formato), format() -> caso haja mais de um formato para a mesma fonte*/
+            font-style: normal;
+            font-weight: normal;
+
+        /*Outros tipos de formatos de texto:
+            - opentype (otf)
+            - truetype (tff)
+            - embedded-opentype
+            -truetype-att
+            -svg*/
+            }
+            @font-face {
+                font-family: 'quicksand';
+                src: url(static/Quicksand-SemiBold.ttf) format(truetype);
+            }
+
+            body{
+                background-image: linear-gradient(to bottom, aqua, black);
+                background-attachment: fixed;
+            }
+
+        h1{
+            font-family: 'courgette';
+            font-size: 3em;
+        }
+        
+        p{
+            font-family: 'quicksand';
+            font-size: 1.5em;
+    
+        }
+
+    </style>
+<body>
+    <h1>Testando Fontes Externas baixadas</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quos veritatis recusandae, modi nostrum error quia ab porro dolores? Quam, accusantium. Provident non maxime deserunt, debitis adipisci aliquam possimus quo dolore dolorem nisi. Alias dignissimos exercitationem ipsum doloribus reprehenderit a officiis quae, harum blanditiis, sed nemo impedit consequatur deserunt? Rerum dolor, repellendus possimus consequatur numquam nemo alias sunt qui vel aliquam nostrum eligendi quibusdam beatae quo unde provident vitae deleniti natus perferendis. Quaerat quo rem velit magnam quidem odio est ratione deleniti ducimus. Voluptates nobis ratione dolorum voluptatum pariatur eaque facere praesentium voluptas ipsam, officiis veniam officia recusandae natus sed?</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block; /*tudo na mesma linha. Sem isso as divs ficariam uma em baixo da outra*/
+            background-color:lightgray;
+            text-align: center;
+            border: 1px solid black; /*é uma shorthand: Tamanho, Tipo, Cor */
+            height: 200px; /* altura da div  */
+            width: 200px; /* largura da div */ 
+        } 
+        /*Pseudo-Classes (:) está relacionada com o estado de um elemento ou uma classe*/
+        
+        div:hover{ /*hover é uma pseudo-classe, utlizando isso, toda vez que eu passar o mouse irá acontecer algo que você configurar*/
+            background-color: yellow; /*aqui, toda vez que eu passar o mouse, as divs vão ficar amarela*/
+        }
+    </style>
+</head>
+<body>
+    <div>01</div> <!--A div é um espaço de uma linha, podendo ser alterado a sua largura e altura com CSS3-->
+    <div>02</div>
+    <div>03</div>
+</body>
+</html>

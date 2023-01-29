@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px; /*espessura da bordar*/
+            border-style: solid; /**/
+            border-color: black;
+            /* ou utilizar o shorthand: "boder: <boder-width> <boder-style> <boder-color>*/
+            /* Padding são divididos em 4: top, right, left, bottom*/
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            /* Shorthand:  Padding: <top, right, bottom, left>;  Se o valor das 4 forem iguais, basta digitar o valor uma única vez
+            Se dois valores forem colocados, como exemplo: 10, 20. O de cima e o de baixo é 10, o da esquerda e o da direita 20*/
+
+            /*Margem também é configurada assim como o padding*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            /*Se tiver a necessidade de centralizar a caixa no meio, basta utilzar -> margin: auto; - Se for um texto é só colocar text-align que funciona*/
+
+            outline-width: 5px; /*Fica dentro da margem, colocado no lado de fora da borda*/
+            outline-style: solid;
+            outline-color: blue;
+        }
+        a{
+            border-width: 1px;
+            border-style: solid;
+            border-color: red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-level</h1>
+    <p>Parágrafos são exemplos de box level, mas os <a href="#"> links são exemplos de caixas inline-level.</a> Vamos ver como isso tudo funciona</p>
+</body>
+</html>
+
+<!--
+        SHORTHANDS:
+        
+        Font: <font-style> <font-weight> <font-size> <font-family>
+        
+        Boder: <boder-width> <boder-style> <boder-color>
+        
+        Padding: 10px -> Todos os lados do padding serão de 10px
+        Padding: 10px 20px -> Top e Bottom 10px e Left e Right 20px
+        Padding: 10px 20px 30px 40px -> Top 10px, right 20px, bottom 30px, left 40px
+
+        margin: 10px 20px 30px 40px -> top 10px, right 20px, bottom 30px, left 40px
+        Margin: 10px auto 30px auto -> vai centralizar a margem da esquerda e direita
+
+        outline: <outline-width> <outline-style> <outline-color>
+
+        Se por acaso eu quiser transformar um inbox-level, como o H1, em inline-box basta:
+        Display: inline -> transforma um inbox-level em um inline-level *lembrando que in-line não tem height e width*
+        Display: block -> transforma um inline-level em um inbox-level.
+        
+
+
+
+    
+
+
+
+-->

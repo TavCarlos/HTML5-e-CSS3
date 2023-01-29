@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando hover</title>
+</head>
+    <style>
+        div > p{ /*com o simbolo "> (filho/children)" estou especificando que é um parágrafo dentro da div*/
+            display: none; /*com isso, esse paragrafo some*/
+        }
+        div:hover{
+            color: red;
+        }
+
+        div:hover > p{ /*quando eu passar o mouse o parágrafo que está dentro da div fará: */
+            display: block; /*Quando eu passar o mouse em cima da frase, a frase irá mostrar*/
+            color: white;
+            background-color: black;
+            width: 175px; /*largura da div*/
+        }
+            
+    </style>
+<body>
+    <h1>Testando hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

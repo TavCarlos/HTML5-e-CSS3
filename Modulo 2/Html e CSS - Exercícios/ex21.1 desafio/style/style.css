@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'idroid';
+    src: url('fontes/idroid.otf') format(opentype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root{
+    --cor0:#4cb3f8;
+    --cor1:#3597d8;
+    --cor2:#236692;
+    --cor3:#42a9ee;
+    --cor4:#2673a7;
+    --cor5:#3597d8;
+    --cor6:#79b9e49d;
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--cor3);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1) ,var(--cor2), #0f4468);
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    height: 100%;
+    /*com o width e height o cabeçalho se adapta conforme a tela
+    Pode utilizar min-height: 150px; */
+}
+header > h1{
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    text-shadow: 2px 2px 0px #0000006b;
+    
+}
+
+header > h2{
+    color: white;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    padding: 0px 20px 10px 20px ;
+    text-shadow: 2px 2px 0px #0000006b;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    padding: 6px;
+    font-family: var(--fonte-padrao); 
+
+    
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor0);
+    border-radius: 6%;
+    padding: 6px;
+    transition-duration: .5s; /*a duração da animação de :hover será de meio segundo*/
+}
+
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #00000070;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+main > h1{
+    font-family: idroid;
+    font-weight: normal;
+    color: var(--cor4);
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-left: 15px;
+
+
+}
+main > h2{
+    padding-left: 15px;
+    font-family: idroid;
+    font-weight: normal;
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor6), transparent); /*Da cor até transparente*/
+}
+main > p{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    text-indent: 30px; /*Recuo no início do parágrafo*/
+    line-height: 1.5em; /*espaço entre as linhas*/
+}
+
+main > img{ /*A tag <img> é uma inline-box, por conta disso para centralizar uma imagem é necessário torna-la um bloco. Assim, funções como margem, altura, largura... funcionarão*/
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+main > picture > img{ /*Ou posso colocar main img{ } sem o >. Isso significa que vai ser qualquer imagem dentro da main, mesmo estando em outros níveis*/
+    width: 100%; /*Com isso, a imagem ocupará 100% da largura da minha main*/
+}
+
+main > .foto2{
+    width: 100%;
+}
+
+
+div.video{
+    background-color:#2673a7;
+    margin: 0px -20px 0px -20px; /*isso faz com que a margem do background-color cole com a margem da main, por cima da padding da main, ocupando toda a largura*/
+    padding: 20px;
+    padding-bottom: 59%; /*quando da play no video, pode ficar com uma borda preta, aqui, você consegue configurar o quanto da borda preta irá aparecer*/
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%; /*afasta o video da borda de cima*/
+    left: 5%; /*afasta o video da borda da esquerda*/
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background:#3597d8;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 8px #00000063;
+}
+
+aside > h3{
+    color: white;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: var(--cor2);
+    border-radius: 10px 10px 0px 0px;
+
+}
+aside > p{
+    margin: 0px;
+    padding: 5px;
+    line-height: 1.5em;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+aside > ul{
+    margin: 0px;
+    list-style-position: inside; /*se as bolinhas da lista estiver para fora da caixa, ele coloca para dentro*/
+    columns: 2; /*divide em 2 colunas a lista*/
+}
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    padding: 3px;
+}
+
+footer p{
+    margin: 0px;
+}
+
+
+
+/* Planejamento de:
+
+Layout - https://www.mockflow.com/ - 
+Modela/Design do site
+
+Cores - https://color.adobe.com/pt/create/color-wheel
+
+Fontes - https://fonts.google.com/
+
+
+
+É possível criar variáveis em CSS:
+
+:root{
+    -- *nome da variável: elemento
+}
+
+exemplo:
+
+:root{
+    --cor0: #c5ebd6;
+}
+
+assim, toda vez que eu fizer: color: var(--cor0);
+ele vai puxar a cor #c5ebd6. 
+(posso apertar ctrl + espaço)
+
+
+
+Quando você faz *{
+    margin: 0px;
+    padding: 0px;
+}
+você está colocando uma configuração global
+*/
+
+/*-*/
+
+/*RESPONSIVIDADE DOS SITES*/
+
+
+
