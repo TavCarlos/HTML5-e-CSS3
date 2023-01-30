@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos Fundos</title>
+    <style>
+        div.bloco{
+            background-image: url('imagens/wallpaper002.jpg');
+            height: 200px;
+            border: 1px solid black;
+            margin: 5px;
+            border-radius: 10px;
+
+        }
+        div#q1{
+            background-position: left top;
+        }
+
+        div#q2{
+            background-position: left center;
+        }
+
+        div#q3{
+            background-position: right bottom;
+        }
+
+        div#q4{
+            background-position: center center;
+        }
+        /* Tais atributos modificam a ancoragem da imagem, ou seja, onde ela irá começar dentro da div.
+            Sendo assim, conforme vou diminuindo a tela, a imagem sempre será ancorada pela posição dada. Exemplo: ex003-2
+
+        left top: imagem vai começar do canto superior esquerdo e vai até ocupar toda a extensão da div.
+        left center: imagem vai começar no centro do canto esquerdo ''
+        right bottom: imagem vai começar no canto inferior direito ''
+        center center: imagem vai começar do centro '' */
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1">
+
+    </div>
+    <div class="bloco" id="q2">
+
+    </div>
+    <div class="bloco" id="q3">
+
+    </div>
+    <div class="bloco" id="q4">
+
+    </div>
+</body>
+</html>
