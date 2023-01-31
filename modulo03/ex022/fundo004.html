@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Fixo de Tela</title>
+    <style>
+        body{
+            height: 97vh; /*vai ser da altura da viewport, ou seja, da tela do usuário*/
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;*/  /*A imagem vai cobrir a tela inteira, não mostra 100% da imagem, mas ocupa 100% da viewport*/
+
+            /*No background-size, ele aceita: o tamanho fixo em px ou %, além de:
+
+            Auto: seria a mesma coisa que 100%, ele irá aumentar a largura da imagem.
+
+            Contain: faz com que a imagem seja exibida 100% na tela, não importa o quão pequena a tela é. O ruim é que conforme o tamanho da tela do usuário vai mostrar a background-color do body
+            
+            cover: vai cobrir a tela inteira, mesmo que tenha que dar uma picotada na imagem. Sendo assim, ele vai adaptando a imagem ao tamanho da tela. Não mostra 100% da imagem mas ocupa 100% da viewport.*/
+
+            background-attachment: fixed; /*A imagem de background NÃO vai rolar juntamente com o conteúdo, a imagem de fundo ficará parada.
+
+            No background-attachment: scroll  a imagem irá rolar juntamente com o conteúdo*/ 
+
+         /*SHORTHAND - BACKGROUND
+            Color > Image > Postion > / > size > repeat > attachment 
+            A ordem não importa, mas o position TEM que ficar do lado do /size
+           */
+            Background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
+        }
+
+        main{
+            background-color: white;
+            min-width: 300px;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, reiciendis vel eaque voluptatum nulla quisquam atque quas omnis aliquid debitis quam, quae, consequuntur nostrum dolore dolores dignissimos sint? Quo commodi laudantium maiores adipisci inventore soluta magni odio praesentium cumque debitis, sit ea iusto veritatis voluptatem quibusdam eligendi voluptates nesciunt ipsa similique! Repellendus, voluptatibus! Laborum cupiditate rerum cumque beatae, eos dicta accusantium repellat quasi eum nihil nesciunt vitae voluptas atque aliquam culpa libero, quas consequatur tenetur, reiciendis pariatur ullam hic. Laboriosam voluptatum, numquam ab dolorum error fugit expedita reiciendis ad eaque dicta cupiditate ipsa consectetur distinctio cumque et ratione aliquid aut veritatis deleniti maxime facilis unde! Cum velit minus commodi libero sint tenetur praesentium possimus necessitatibus amet voluptates explicabo ipsa eum architecto totam perspiciatis quasi rem ad quaerat consequuntur numquam assumenda ab, id accusamus cupiditate? Deleniti, recusandae officia! Ducimus quidem omnis iure accusamus a necessitatibus molestias neque id, provident similique possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit in, accusamus illo, natus quis quasi iure ex optio, sed sint consequatur ipsum omnis aliquid error quam fugiat at vel repudiandae. Nisi numquam corrupti, fugiat eligendi vero explicabo nobis animi accusamus magni debitis laborum nihil accusantium architecto esse praesentium placeat libero voluptatibus qui tempore totam labore! Laboriosam qui quisquam et voluptates ad aliquid quibusdam culpa quos sed hic quia maxime alias expedita sit officiis in labore nulla, atque recusandae delectus commodi aperiam dolore suscipit! Cupiditate non labore possimus, deleniti modi voluptatum repellendus magni laboriosam eius dolor animi autem, fugit sit sapiente totam culpa. Voluptatibus quia repudiandae labore sequi debitis inventore assumenda reprehenderit, accusantium, ullam et rem doloremque magnam enim omnis temporibus sint porro facilis error iste in qui harum nobis! Eaque quaerat laborum repellat animi vitae similique velit neque! Incidunt libero ut non illo ullam, ad in. Optio minus quam quisquam?</p>
+    </main>
+</body>
+</html>
