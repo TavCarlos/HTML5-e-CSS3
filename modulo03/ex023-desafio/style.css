@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'itim';
+    src: url('fontes/Itim-Regular.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url('fontes/Kanit-Regular.ttf') format(truetype);
+}
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin: 10px 0px 5px 0px;
+    font-family: 'kanit';
+    font-size: 2.5em;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header p{
+    padding: 5px;
+}
+
+section{
+    background: center center/cover no-repeat fixed;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    text-indent: 30px;
+    padding: 65px 0px 65px 0px;
+    font-family: 'itim', sans-serif;
+}
+
+#imagefundo1{
+    background-color: lightblue;
+    background-image: url('imagens/background001.jpg');
+}
+
+#imagefundo2{
+    background-color: lightblue;
+    background-image: url('imagens/background002.jpg');
+}
+
+.image{
+    color: white;
+}
+
+.image div{
+    background-color: #00000069;
+    min-width: 290px;
+    max-width: 350px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
