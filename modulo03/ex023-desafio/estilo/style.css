@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'itim';
+    src: url('../fontes/Itim-Regular.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'kanit';
+    src: url('../fontes/Kanit-Regular.ttf') format(truetype);
+}
+
+:root{
+    --fonte1: 'Itim', cursive;
+    --fonte2: 'Kanit', sans-serif;
+    --fonte3: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin: 10px 0px 5px 0px;
+    font-family:var(--fonte2);
+    font-size: 2.5em;
+    font-variant: small-caps;
+    /*Text-transform: uppercase; - todas as letras em maiusculo
+    
+    OU
+
+    font-variant: small-caps; - as letras ficam maiusculo, porém as primeiras letras são maiores.*/
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header p{
+    padding: 5px;
+    font-family:var(--fonte3);
+}
+
+section{
+    background: right center/cover no-repeat fixed;
+    font-size: 1.6em;
+    line-height: 2em;
+    text-indent: 30px;
+    /*padding: 65px 0px 65px 0px;*/
+    padding-top: 9%;
+    padding-bottom: 9%; 
+    font-family:var(--fonte1);
+}
+
+section#imagefundo1{
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#imagefundo2{
+    background-image: url('../imagens/background002.jpg');
+}
+
+.image{
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493); /*sombra na box para dentro*/
+}
+
+.image div{
+    background-color: #00000069;
+    min-width: 290px;
+    max-width: 350px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    font-family: var(--fonte3);
+}
