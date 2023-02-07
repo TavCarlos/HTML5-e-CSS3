@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus neque, sequi iste molestiae repellendus dicta velit provident doloremque ducimus eligendi ullam, aliquid quod, alias molestias? Consectetur ullam qui neque possimus?</p>
+
+    <iframe src="../paginas-exemplo/pagina004.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"> <!-- Quando utiliza a configuração do atributo sandbox que recebe o valor sandbox, eu crio uma proteção um pouco maior a ataques, pois não estou capturando nenhum tipo de informação, segurança no máximo -->  <!--Com o referrerpolicy que receve o valor no-referrer, você está dizendo que o conteúdo que está carregada dentro do iframe não vai coletar nenhum tipo de informação do usuário-->  <!-- sandbox="allow-same-origin" vai permitir que os conteúdos da mesma origem, no mesmo servidor que o site, sendo possível liberar coisas pontuais-->
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque est dolorem laudantium? Asperiores eos veniam magni corrupti quos facilis consequuntur vero animi libero culpa soluta, recusandae beatae voluptatem. Tempore?</p>
+</body>
+</html>

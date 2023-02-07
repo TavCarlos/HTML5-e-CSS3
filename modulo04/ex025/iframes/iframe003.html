@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 97vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat placeat cum labore enim vitae tempora debitis voluptates ipsam dolorem saepe, pariatur quae, dolor assumenda aliquid dolore? Officia rem illum enim dolorum numquam? Est tempore voluptas odio. Quis, placeat iure voluptatem omnis aspernatur a asperiores quasi doloremque, commodi saepe autem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maiores quam beatae iure dolorum perferendis cupiditate pariatur, doloremque numquam deserunt nemo eligendi. Pariatur veniam eos reiciendis natus aliquam suscipit earum.</p>
+
+
+    <ul>
+        <li><a href="../paginas-exemplo/pagina001.html" target="frame">Primeira página</a></li> 
+        <li><a href="../paginas-exemplo/pagina002.html" target="frame">Segunda página</a></li><!--utilizando o target='frame' (precisa do name="frame" no iframe) é possível navegar a página descrita dentro do iframe do site-->
+        <li><a href="../paginas-exemplo/pagina003.html" target="frame">Terceira pagina</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non ex dolorem corporis qui quaerat modi recusandae quae suscipit praesentium, dolorum cupiditate totam et repellat eius a mollitia. Cum exercitationem ea sed eius provident blanditiis modi quibusdam voluptatibus optio, explicabo non ex in dolorem, rerum veritatis dignissimos ipsam ratione expedita!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>" frameborder="0"> <!--Utilizando name="frame" no target--> <!-- Sempre que você atualiza a página o iframe ficará em branco até clicar em um dos links. Assim, para que isso não aconteça, pode utilizar o srcdoc="" na qual você poderá escrever o que quiser lá dentro para o iframe não ficar vazio. É possível utilizar tags como <p>, <h1>, <img>, etc... Mas também é possível ter uma página só padrão para não ficar em branco, basta colocar no src.-->
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quos voluptatem ullam laboriosam commodi consectetur rerum illo blanditiis obcaecati animi. Dolore eos, debitis aspernatur ipsum repellendus commodi consequatur quae fugiat sint laborum voluptate ea aperiam magnam optio quis hic vel voluptatem similique reiciendis odit voluptatum odio cumque! Necessitatibus, distinctio incidunt!</p>
+</body>
+</html>
