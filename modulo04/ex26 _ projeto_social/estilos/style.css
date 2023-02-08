@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 98vh;
+    width: 98vw;
+}
+
+
+main{
+    height: 100vh;
+    width: 100vw;
+/*--Centralização do #telefone - não responsivo:
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    position: relative;
+    background: url('../imagens/fundo-madeira.jpg') top center/cover no-repeat;
+
+}
+
+section#telefone{
+/*centralização da div responsivo*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*---------------------------------*/
+    height: 500px;
+    width: 245px;
+    background-image: url(../imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+iframe#tela{
+    position: relative;
+    top: 64px;
+    left: 17px;
+    height: 376px;
+    width: 214px;
+    /*Posição do iframe dentro do celular*/
+}
+
+
+#redes-sociais{
+    text-align: right;
+}
+
+#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    transform: translate(-3px, -3px); /*quando eu passar o mouse nas img, elas vão se movimentar 3px para cima e 4px para esquerda*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.747);
+    transition: transform 0.5s; /*o transform vai levar 0.5s para se completar*/
+    transition: border 0.1s;
+}
+
+#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    /*Modificando o tamanho das imgs, o border-radius deixa a imagem redonda.*/
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.514);
+    box-sizing: border-box;
+    /*box-sizing: border-box faz com que a bordar fique fazendo parte da img, então quando eu uso o :hover a imagem não movimenta.*/
+}
