@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste do formulario</h1>
+
+    <form action="Cadastro.php" method="post">
+    <p>
+        <label for="iusuario"> Usuario:</label>
+        <input type="text" nome="usuario" id="iusuario" required minlength="5" maxlength="15"> <!--utilizando o required, o campo vira obrigatório--> <!-- O minlength e maxlenth é o cumprimento mínimo que o nome de usuário deve ter-->
+    </p>
+
+    <p>
+        <label for="isenha">Senha: </label>
+        <input type="password" name="senha" id="isenha" required minlength="8" mmaxlength="20" placeholder="Senha" autocomplete="current-password"> <!-- input:password -> aplica um campo para o usuário colocar senha--> <!--Placeholder aparece uma ''dica'' do que o usuário deve escrever dentro do input--> <!--colocando autocomplete no input ele te dará mais opções para indentificação de cada input:text-->
+    </p>
+    <p>
+         <input type="submit" value="Submit">
+        <input type="reset" value="Limpar"> <!--Botão de Limpar-->
+    </p>
+    </form>
+</body>
+</html>

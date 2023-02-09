@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php" method="GET" autocomplete="off"> <!-- form Cria um formulária--> <!--O autocompletar será desligado--> <!--Os dados dos formulários geralmente são enviados para linguagens de programção, o ''action'' é uma ação na qual será disparada para a linguagem quando o submit for acionado. -->
+        
+            <p><label for="inome">nome:</label> <!--O Label fornece uma ligação entre o paragrafo e o input:text, sendo assim, é necessário, no label, informar o id-->
+                  
+
+            <input type="text" name="nome" id="inome"></p> <!-- input:text serve para abrir uma caixa para escrever-->
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            
+            <input type="text" name="sobrenome" id="isobrenome"></p> <!-- O name e ID são indentificadores dos campos de entrada, na qual o primeiro é mais importante para o html e php enquanto o id para outros como javascript-->
+
+        <p><input type="submit" value="Enviar"></p> <!--input:submit -> cria um botão, a frase que estiver dentro do valeu é o que aparecerá dentro do botão-->
+    </form>
+
+<!--Existe dois tipos de métodos que são simples para envio de formulário. Quando no form não utilizamos method="", ele automaticamente coloca utiliza o method (GET). O outro método é o (POST).
+Utilizando o GET, as informações digitadas aparecerão na URL, com o POST tal informação não aparecerá. Entretanto não quer dizer que os dados estão seguros. Para proteção desses dados, é necessário a utilização de criptografia de dados e HTTPS -->
+
+<!--O GET é utilizado quando: 
+    1° - Os dados não forem sensíveis;
+    2° - Quando envia dados com GET só pode ultrapassar 3000bytes(apróximo 3000 mil letras). 
+
+    NÃO UTILIZAR O GET:
+    1° - Utilizar campos sensíveis (Senha, número de caetão de crédito) - Utilizar HTTPS
+    2° - Envio de foto, ou qualquer outro tipo de arquivo - Utilizar POST
+    3° - Dados que ultrapassam mais de 3000bytes. - Utilizar post
+    -->
+
+
+</body>
+</html>

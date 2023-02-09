@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="inome">Usuário: </label>
+            <input type="text" name="nome" id="inome" required minlength="5" autocomplete="name" placeholder="Usuário">
+        </p>
+
+        <p>
+            <label for="inote"> Média: </label>
+            <input type="number" name="note" id="inota" required min="0" max="3" placeholder="Média" step="0.5"> <!--input:number -> só deixa colocar números;  step -> De quanto e quanto o número vai mudando-->
+            <!--A Tags que aceitam determinados atributos e outros não; Como exemplo a utilização do maxlengh para input:Text e a utilização de max para o input:number, não sendo possível inverter, visto que o maxlengh não funcionar em input:number-->
+        </p>
+
+        <p>
+            <label for="imes">Período letivo: </label>
+            <input type="month" name="mes" id="imes" required> <!--input:month => abre um input com data com mês e ano-->
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova: </label>
+            <input type="date" name="dia" id="idia"> <!--input:date -> input abre o imput com dia, mês e ano-->
+        </p>
+
+        <p>
+            <label for="">Horário da Prova: </label>
+            <input type="time" name="hora" id="ihora" required> <!-- input:time -> mostra um input com hora-->
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
+</body>
+</html>
