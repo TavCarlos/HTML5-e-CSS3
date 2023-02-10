@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, datalist e textarea</title>
+</head>
+<body>
+    <form action="Cadastro.php" method="post">
+        <div>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest"> <!--Abre uma lista para escolher-->
+                <optgroup label="Sudeste"> <!--Separa em grupo específicos (esse label é atributo e não elemento)-->
+                    <option selected value="" >-------Escolha-------</option> <!--Seleted faz a mesma coisa que o checked-->
+                    <option value="SP"> São Paulo</option> <!--Opções da lista-->
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Mina-Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <optgroup Label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="iprof"></label>
+            <input type="text" name="prof" id="iprof" list="listprof">  <!--precisa do atributo list para relacionar o input juntamente com a datalist-->
+            <datalist id="listprof"> <!--Mesmo no input:text aparece uma lista igual ao autocomplete-->
+                <option value="Adm">Administração</option>
+                <option value="Dev">Desenvolvedor</option>
+            </datalist>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Limpar">
+        </div>
+            <p>
+                <label for="imsg">Mensagens: </label>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <!--Vai aparece um bloco para o usuário digitar-->
+            </p>
+    </form>
+</body>
+</html>

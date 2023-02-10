@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Form </title>
+</head>
+<body>
+        <form action="cadastro.php" method="post" >
+            
+            <fildset> <!-- Cria um Campo Especial para os dados através de uma borda, agrupando campos semelhantes. -->
+                <legend>Dados pessoais</legend> <!-- Legenda do campo fildset -->
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required> <!--Com o input:email a caixa irá verificar se terá @-->
+                </p>
+                <p>
+                    <label for="itel"> Telefone </label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel"> <!-- input:tel não tem muitos filtros. Tem como colocar um parâmetro para telefones -  mas tem que estudar RegEx(expressões regulares), Entretanto a validação da informação será feita em javascrip-->
+                </p>
+            </fildset>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+</body>
+</html>

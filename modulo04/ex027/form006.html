@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos color, range e file</title>
+</head>
+<body>
+    <form action="Cadastro.php" method="post"></form>
+
+        <fieldset>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#ff00ff"> <!--Com o Value no input:color você pode definir a cor inicial, por padrão é preto-->
+        </fieldset>
+
+
+        <fieldset>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" valeu="1"> <!--Input:range. O min e o max por padrão vão de 0 a 100; value define a posição inicial-->
+
+        </fieldset>
+
+        <fieldset>
+
+            <label for="iphoto">Foto do perfil</label>
+            <input type="file" name="photo" id="iphoto">
+        </fieldset>
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Limpar">
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio button</title>
+</head>
+<body>
+    <h1>Checkbox e Radio button</h1>
+
+    <form action="Cadastro.php" method="post">
+
+        <fieldset>
+            <legend>Sexo</legend>
+           
+           <!-- <input type="radio" name="sxfem" id="isxfem"><label for="isxfem">Feminino</label>
+                    <input type="radio" name="sxmasc" id="isxmasc"> <label for="isxmasc">Masculino</label> 
+                
+                No input:radio, se eu utilizar o name diferente, como ocorre no semplo acima, você conseguirá marcar todas as opções e não consiguirá desmarcar.
+            
+                Para solucionar esse problema, utilizar o name parecido, como visto abaixo-->
+                
+                <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+                <input type="radio" name="sexo" id="isxoutro" checked ><label for="isxoutro">Outro</label> <!--checked serve para já deixar a opção marcada. No input:radio não pode haver mais de um checked, entretanto no input:checkbox pode-->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label>
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">Basquete</label>
+            <input type="checkbox" name="hand" id="ihand"> <label for="ihand">Handball</label>
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
