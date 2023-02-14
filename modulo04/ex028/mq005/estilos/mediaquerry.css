@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*
+Typical Device Breakpoint (width dos aparelhos nos dias atuais: Pesquisar na W2C)
+Aparelhos pequenos: max-width: 600px
+Celular: min-width: 600px - max-width: 768px
+Tablet: min-width: 768px- max-width: 992px
+Deskptop: min-width: 922px - max-width 1200px
+Grandes telas: Acima de 1200px
+*/
+
+@media screen and (min-width: 992px){
+    i#burguer{
+        display: none;
+
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu li{
+        display: inline-block;
+    }
+
+    main{
+        width:768px;
+    }
+}

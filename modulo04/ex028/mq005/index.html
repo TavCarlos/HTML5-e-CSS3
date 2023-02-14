@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querry</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Imagem do burger menu-->
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquerry.css">
+</head>
+<body onresize="mudoutamanho()"> <!--JavaScript -> conforme mudo o tamanho da tela. O burguermenu estava sumindo conforme alterava o tamanho da tela-->
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">reorder</i> <!-- Quando clicar no menu burguer os items aparecerem, Javascript--> <!--A classe é referente ao aparecimento do burguermenu *reorder*-->
+        <menu id="items">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trend</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Internacional</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias doloribus natus autem maxime rem incidunt exercitationem reiciendis. Necessitatibus, odio! Ullam, exercitationem dolorum eius iure eos mollitia vero nemo modi aut in repudiandae, culpa eveniet voluptas optio recusandae animi nisi accusantium incidunt perferendis. Dicta recusandae fugit consequuntur fugiat quidem et deserunt?</p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, accusantium eaque, perspiciatis ab blanditiis doloremque voluptatum, fuga consequatur at nemo officiis voluptates totam esse ut! Molestias at numquam maiores consequatur!
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores enim id iste nulla delectus commodi error neque quidem eligendi labore, mollitia et? Odit tempora excepturi quidem dicta repellendus ducimus debitis. Quidem praesentium ducimus dolor expedita adipisci qui aliquid error deserunt soluta odio. Itaque, delectus eligendi! Quod alias debitis aspernatur rerum.
+            </p>
+        </article>
+    </main>
+
+    <script>
+
+       function mudoutamanho() {
+            if (window.innerWidth >= 992) {
+                items.style.display = 'block'
+            } else {
+                items.style.display = 'none'
+                }
+        }
+
+
+        function clickMenu() { /*Função JavaScript para fazer o burguermenu*/
+            if (items.style.display == 'block') {
+                items.style.display = 'none' 
+            } else {
+                items.style.display = 'block'
+            }
+
+        }
+    </script>
+
+</body>
+</html>

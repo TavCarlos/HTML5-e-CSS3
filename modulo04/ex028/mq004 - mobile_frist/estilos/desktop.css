@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Desktop*/
+
+body{
+    background-image: url(../imagens/back-pc.jpg);
+}
+
+main{
+    width: 75vw;
+}
+
+img#phone{
+    display: none;
+}
+
+img#tablet{
+    display: none;
+}
+
+img#print{
+    display: none;
+}
+
+img#pc{
+    display: block;
+}
+
+img#tv{
+    display: none;
+}
