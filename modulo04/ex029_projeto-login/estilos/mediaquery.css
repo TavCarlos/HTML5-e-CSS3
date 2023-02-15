@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section{
+        width: 80vw;
+        height: 330px;
+
+    }
+
+    section#login > div#imagem{
+        float: left; /* é necessário que a div#imagem esteja com display:block no código principal. Assim quando a tela ficar do tamanho correspondente, a imagem irá ''fluturar'' para esquerda*/
+        width: 26vw;
+        height: 68vh;
+
+    }
+
+    section#login > div#formulario{
+        float: right; /*o formulário vai ''fluturar'' para direita - div#formulario precisa está com display:block*/
+        width: 65%;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section{
+        width: 50%;
+        height: 340px;
+    }
+
+    section#login > div#imagem{
+        float: right;
+        width: 40%;
+        height: 62vh;
+    }
+
+    section#login > div#formulario{
+        float: left;
+        width: 60%;
+    }
+
+    div#formulario > p{
+        font-size: 1em;
+    }
+}
