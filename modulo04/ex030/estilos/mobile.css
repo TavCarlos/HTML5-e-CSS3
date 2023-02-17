@@ -107,6 +107,14 @@ section > div > p#valor{
     margin-bottom: 10px;
 }
 
+section > div#marginleft{
+    display: block;
+}
+
+section > div#bottom-m{
+    display: block;
+}
+
 section > a{
     background-color: #02d102;
     padding: 7px;
@@ -119,11 +127,12 @@ section > a{
     border-radius: 5px;
 }
 
+
 section > a:hover{
     background-color: #029602;
 }
 
-section > div.caixa > span.material-icons{
+section > div > div.caixa > span.material-icons{
     display: block;
     font-size: 2.5em;
     color: white;
@@ -131,7 +140,7 @@ section > div.caixa > span.material-icons{
     
 }
 
-section > div.caixa{
+section > div > div.caixa{
     margin-top: 25px;
     margin-left: 103px;
     margin-bottom: 10px;
@@ -141,7 +150,7 @@ section > div.caixa{
     border-radius: 15px;
 }
 
-section > div > p.cor-branco{
+section > div > div > p.cor-branco{
     color: white;
     text-align: center;
     font-weight: 500;
@@ -153,11 +162,16 @@ section > div > p{
     font-size: 0.9em;
 }
 
-section > p > span{
+section > div > p{
+        text-align: center;
+        font-size: 0.9em;
+}
+
+section >  p > span{
     color: pink;
 }
 
-section > p.intent{
+section > div > p.intent{
     text-indent: 45px;
     margin-top: -5px;
 }
@@ -192,10 +206,12 @@ aside{
     left: 50%;
     top: 50%;
     transform: translate(-50%, 319.2%); */
+    
     background-color: white;
     width: 400px;
     margin: auto;
     margin-bottom: 50px;
+    padding-top: 140px;
     padding-left: 20px;
     padding-bottom: 30px;
     border-radius: 0px 0px 15px 15px;
