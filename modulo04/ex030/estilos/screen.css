@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+body{
+    width: 98vw;
+    background-color: black;
+}
+
+header{
+    margin-top: 0px;
+    width: 97.3vw;
+    border-radius: 0%;
+    background-color: black;
+}
+
+header  p {
+    text-align: center;
+    color: white;
+}
+
+
+header > div#pai{
+    display: flex;
+    justify-content: center;
+}
+
+
+header > div#black{
+    margin: auto;
+    width: 200px;
+    background-color: white;
+
+}
+
+header > div > p#white{
+    color: black;
+    text-align: left;
+    font-size: 0.7em;
+    
+}
+
+header > div#pai > p{
+    font-size: 2.7em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+header > h3{
+    font-size: 1em;
+    color: white;
+}
+
+
+main{
+    width: 97.3vw;
+    height: 1400px;
+}
+
+section > p{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+section > a{
+    display: block;
+    margin: auto;
+    width: 180px;
+    text-align: center;
+}
+
+section > div#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+section > div > div.caixa{
+    margin: 0px;
+    width: 335px;
+}
+
+section div#leftm{
+    margin-left: 15px;
+}
+
+section > div#container1{
+    display: flex;
+    padding: 15px 0px 15px 0px;
+}
+
+section div#filho1{
+    width: 1050px;
+}
+
+section  div > p{
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-indent: 10px;
+}
+
+section > div > div#img{
+    display: block;
+}
+
+section div > h3{
+    margin-top: 15px;
+}
+
+section div > p#inf-valor{
+    margin-top: 15px;
+    text-align: center;
+}
+
+section div > p#valor{
+    font-weight: bolder;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+section a {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+section div#filhote{
+    width: 600px;
+    margin-right: 20px;
+}
+
+h3.left{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+section ul{
+    width: 700px;
+    columns: 2;
+}
+
+aside{
+    width: 97.3vw;
+    padding-top: 0px;
+}
+
+aside p{
+    text-align: justify;
+    font-size: 1.2em;
+    text-indent: 20px;
+    line-height: 1.2em;
+}
+
+aside img{
+    border: 2px solid black;
+}
+
+

@@ -35,7 +35,7 @@ header > p#projeto{
     margin-bottom: 5px;
 }
 
-header > div{
+header > div#black{
     background-color: black;
     color: white;
     width: 100px;
@@ -97,11 +97,11 @@ section > p{
     text-align: justify;
 }
 
-section > p#inf-valor{
+section  p#inf-valor{
     padding-left: 35px;
 }
 
-section > div > p#valor{
+section  div > p#valor{
     font-weight: bolder;
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -115,7 +115,7 @@ section > div#bottom-m{
     display: block;
 }
 
-section > a{
+section  a{
     background-color: #02d102;
     padding: 7px;
     margin-left: 115px;
@@ -128,7 +128,7 @@ section > a{
 }
 
 
-section > a:hover{
+section  a:hover{
     background-color: #029602;
 }
 
@@ -162,12 +162,12 @@ section > div > p{
     font-size: 0.9em;
 }
 
-section > div > p{
+section  div > p{
         text-align: center;
         font-size: 0.9em;
 }
 
-section >  p > span{
+section > div > div > p > span{
     color: pink;
 }
 
@@ -177,13 +177,13 @@ section > div > p.intent{
 }
 
 
-section > ul{
+section  ul{
     list-style-type: none;
     width: 275px;
     text-align: justify;
 }
 
-section > ul > li{
+section  ul > li{
     padding-top: 7px;
     font-size: .8em;
     line-height: 1.5em;
@@ -192,12 +192,16 @@ section > ul > li{
     font-weight: 400;
 }
 
-section > ul > li.beneficios{
+section  ul > li.beneficios{
     background-color: #974057;
     width: 300px;
     padding: 5px 5px 5px 15px;
     margin: 5px;
     border-radius: 15px;
+}
+
+section > div > div#img{
+    display: none;
 }
 
 
@@ -244,3 +248,4 @@ footer{
     background-color: white;
     text-align: center;
 }
+
